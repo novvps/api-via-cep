@@ -6,7 +6,7 @@ def criarTabela():
     cur.execute('DROP TABLE IF EXISTS apicep')
 
     comando = '''CREATE TABLE "apicep" (
-        cep VARCHAR(150) NOT NULL,
+        cep VAR(150) NOT NULL,
         logradouro TEXT,
         complemento TEXT,
         unidade TEXT,
@@ -35,7 +35,7 @@ def verTabela():
 def inserirInfo(cepApi, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi):
     con = sql.connect('banco.db')
     cur = con.cursor()
-    cur.execute('insert into viacep (cep, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi) values(?,?,?,?,?,?,?,?,?,?,?,?,?)', (cepApi, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi))
+    cur.execute('insert into apicep (cep, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi) values(?,?,?,?,?,?,?,?,?,?,?,?,?)', (cepApi, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi))
     con.commit()
     con.close()
 

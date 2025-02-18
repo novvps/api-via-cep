@@ -1,0 +1,12 @@
+body {
+    background-image: url("/static/images/background.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1, form {
+    display: flex;
+    justify-content: center;
+}
