@@ -9,23 +9,10 @@
 </head>
 <body>
     <h1>Olá, seja bem vindo</h1>
-    <form action="/" method="post">
-    <label for="cep">Digite o CEP (Apenas números):</label>
-    <input type="text" name="cep" autocomplete="off" required maxlength="8" placeholder="Digite aqui...">
-    <input type="submit" value="enviar">
+    <form action="/buscar_cep" method="POST">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required maxlength="8" autocomplete="off">
+        <button type="submit">Buscar</button>
     </form>
-    <br><br>
-    <strong><p>Logradouro: </strong>{{ logradouro }}</p>
-    <strong><p>complemento: </strong>{{ complemento }}</p>
-    <strong><p>unidade: </strong>{{ unidade }}</p>
-    <strong><p>bairro: </strong>{{ bairro }}</p>
-    <strong><p>localidade: </strong>{{ localidade }}</p>
-    <strong><p>uf: </strong>{{ uf }}</p>
-    <strong><p>estado: </strong>{{ estado }}</p>
-    <strong><p>regiao: </strong>{{ regiao }}</p>
-    <strong><p>ibge: </strong>{{ ibge }}</p>
-    <strong><p>gia: </strong>{{ gia }}</p>
-    <strong><p>ddd: </strong>{{ ddd }}</p>
-    <strong><p>siafi: </strong>{{ siafi }}</p>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/resultado.css')}}">
+    <link rel="icon" href="{{ url_for ('static', filename='images/icone.png')}}">
+    <title>Resultado da Busca</title>
+</head>
+<body>
+    <h1>Resultado da Busca</h1>
+    <p><strong>cep:</strong> {{dados.cep}}</p>
+    <p><strong>Logradouro:</strong> {{dados.logradouro}}</p>
+    <p><strong>complemento:</strong> {{dados.complemento}}</p>
+    <p><strong>unidade:</strong> {{dados.unidade}}</p>
+    <p><strong>bairro:</strong> {{dados.bairro}}</p>
+    <p><strong>localidade:</strong> {{dados.localidade}}</p>
+    <p><strong>uf:</strong> {{dados.uf}}</p>
+    <p><strong>estado:</strong> {{dados.estado}}</p>
+    <p><strong>regiao:</strong> {{dados.regiao}}</p>
+    <p><strong>ibge:</strong> {{dados.ibge}}</p>
+    <p><strong>gia:</strong> {{dados.gia}}</p>
+    <p><strong>ddd:</strong> {{dados.ddd}}</p>
+    <p><strong>siafi:</strong> {{dados.siafi}}</p>
+    <a href="/">Voltar</a>
+</body>
+</html>

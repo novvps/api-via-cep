@@ -32,10 +32,10 @@ def verTabela():
     con.close()
     return dados
 
-def inserirInfo(cepApi, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi):
+def inserirInfo(cep, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi):
     con = sql.connect('banco.db')
     cur = con.cursor()
-    cur.execute('insert into apicep (cep, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi) values(?,?,?,?,?,?,?,?,?,?,?,?,?)', (cepApi, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi))
+    cur.execute('insert into apicep (cep, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi) values(?,?,?,?,?,?,?,?,?,?,?,?,?)', (cep, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi))
     con.commit()
     con.close()
 
