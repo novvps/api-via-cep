@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos os CEPs</title>
+</head>
+<body>
+    {% for dado in dados %}
+        <p><strong>cep:</strong> {{dado.cep}}</p>
+        <p><strong>Logradouro:</strong> {{dado.logradouro}}</p>
+        <p><strong>complemento:</strong> {{dado.complemento}}</p>
+        <p><strong>unidade:</strong> {{dado.unidade}}</p>
+        <p><strong>bairro:</strong> {{dado.bairro}}</p>
+        <p><strong>localidade:</strong> {{dado.localidade}}</p>
+        <p><strong>uf:</strong> {{dado.uf}}</p>
+        <p><strong>estado:</strong> {{dado.estado}}</p>
+        <p><strong>regiao:</strong> {{dado.regiao}}</p>
+        <p><strong>ibge:</strong> {{dado.ibge}}</p>
+        <p><strong>gia:</strong> {{dado.gia}}</p>
+        <p><strong>ddd:</strong> {{dado.ddd}}</p>
+        <p><strong>siafi:</strong> {{dado.siafi}}</p>
+        <br>
+        <br>
+    {% endfor %}
+</body>
+</html>
