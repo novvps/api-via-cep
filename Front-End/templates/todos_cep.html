@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todos os CEPs</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/todos_cep.css')}}">
 </head>
 <body>
+    <a href="/">Voltar</a>
     {% for dado in dados %}
         <p><strong>cep:</strong> {{dado.cep}}</p>
         <p><strong>Logradouro:</strong> {{dado.logradouro}}</p>
